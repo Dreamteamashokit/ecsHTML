@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="Thu, 19 Nov 1900 08:52:00 GMT">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <!--Loading bootstrap css-->
+
+    <link type="text/css" rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/orange-blue.css" class="default-style">
+   
+    <link type="text/css" rel="stylesheet" href="css/style-responsive.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue";
+            font-size: 13px;
+            color: #333;
+            background: #ddd;
+            padding: 20px;
+            font-family: "Roboto";
+        }
+
+        label {
+            display: block;
+            position: relative;
+            padding: 14px 0;
+            width: 100%;
+            margin: auto;
+        }
+
+        input {
+            border: none;
+            border-bottom: solid thin #ccc;
+            padding: 6px 0;
+            font-size: 13px;
+            font-family: "Helvetica Neue";
+            background: transparent;
+            position: relative;
+            width: 100%;
+            font-family: "Roboto";
+            color: #333;
+        }
+
+            input + span {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                font-size: 10px;
+                z-index: 2;
+            }
+
+            input:placeholder-shown + span {
+                display: none;
+            }
+
+        div.calendar {
+            position: relative;
+        }
+
+            div.calendar.calendar-open label input {
+                z-index: 2;
+            }
+
+            div.calendar.calendar-open label::after {
+                content: "";
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(255, 255, 255, 0.95);
+                z-index: 1;
+            }
+
+        #calendarElem {
+            position: absolute;
+            top: calc(100% - 14px);
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 3;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-shadow: 0 1px 3px #999;
+        }
+
+            #calendarElem .calendar-title {
+                padding: 10px 0;
+                text-align: center;
+                font-size: 14px;
+                border-bottom: solid thin #ddd;
+                position: relative;
+            }
+
+                #calendarElem .calendar-title button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border: 0;
+                    background: none;
+                    font-size: 0;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                    #calendarElem .calendar-title button::after {
+                        font-family: "Material Icons";
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 26px;
+                        text-align: center;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        color: #999;
+                    }
+
+                    #calendarElem .calendar-title button.previous {
+                        left: 10px;
+                    }
+
+                    #calendarElem .calendar-title button.next {
+                        right: 10px;
+                    }
+
+                    #calendarElem .calendar-title button.previous::after {
+                        content: "\e314";
+                    }
+
+                    #calendarElem .calendar-title button.next::after {
+                        content: "\e315";
+                    }
+
+            #calendarElem .calendar-week {
+                display: flex;
+                width: 100%;
+                font-weight: 300;
+            }
+
+                #calendarElem .calendar-week.title span {
+                    font-weight: 400;
+                    color: #000;
+                }
+
+                #calendarElem .calendar-week .calendar-day {
+                    flex-grow: 1;
+                    flex-basis: 14.285%;
+                    text-align: center;
+                    font-size: 12px;
+                    align-self: center;
+                }
+
+                    #calendarElem .calendar-week .calendar-day span {
+                        display: block;
+                        height: 26px;
+                        width: 26px;
+                        line-height: 26px;
+                        text-align: center;
+                        margin: 4px auto;
+                    }
+
+                    #calendarElem .calendar-week .calendar-day.weekend {
+                        background-color: #f3f3f3;
+                    }
+
+                    #calendarElem .calendar-week .calendar-day.inactive {
+                        background-color: #eee;
+                        color: #999;
+                    }
+
+                    #calendarElem .calendar-week .calendar-day.selected {
+                        background-color: #71b9f9;
+                        color: white;
+                        font-weight: 400;
+                    }
+
+                    #calendarElem .calendar-week .calendar-day.today span {
+                        color: #0092d6;
+                        font-weight: 400;
+                    }
+
+                #calendarElem .calendar-week:not(:last-child) {
+                    border-bottom: solid thin #ddd;
+                }
+
+                #calendarElem .calendar-week .calendar-day:not(:last-child) {
+                    border-right: solid thin #ddd;
+                }
+
+
+
+    </style>
+</head>
+                <body class="login-body">
+                    <div class="calendar">
+                        <label name="startDate">
+                            <input name="startDate" type="text" data-type="date" placeholder="Start Date">
+                            <span>Start Date</span>
+                        </label>
+                    </div>
+
+                    <script src="js/jquery-1.10.2.min.js"></script>
+                    <script src="js/cal.js"></script>
+
+                </body>
+	
+</html>
