@@ -1444,13 +1444,13 @@ hr {
 }
 .profile .user-info {
   padding: 15px;
-  color: #000;
+  color: #fff;
 }
 .profile .user-info .img-circle {
   border: 2px solid #fff;
 }
 .profile .user-info:hover {
-  color: #111;
+  color: #fff;
 }
 .profile .user-action {
   padding: 0px 15px 15px 15px;
@@ -6118,9 +6118,9 @@ a.list-group-item.active > .badge,
 .panel {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
-  border-radius: 0px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
 }
 .panel > .panel-heading {
   font-size: 18px;
@@ -6211,8 +6211,8 @@ a.list-group-item.active > .badge,
 }
 .panel.panel-orange > .panel-heading {
   color: #FFFFFF;
-  background: #e9662c;
-  border-color: #e9662c !important;
+  background: #e67273;
+  border-color: #e67273 !important;
 }
 .panel.panel-orange > .panel-heading .subtitle {
   color: #FFFFFF;
@@ -7019,8 +7019,8 @@ fieldset[disabled] .btn-grey.active {
 }
 .btn-dark {
   color: #ffffff;
-  background-color: #e67273;
-  border-color: #e67273;
+  background-color: #333;
+  border-color: #333;
 }
 .btn-dark:hover,
 .btn-dark:focus,
@@ -7028,8 +7028,8 @@ fieldset[disabled] .btn-grey.active {
 .btn-dark.active,
 .open .dropdown-toggle.btn-dark {
   color: #ffffff;
-  background-color: #e67273;
-  border-color: #e67273;
+  background-color: #000;
+  border-color: #000;
 }
 .btn-dark:active,
 .btn-dark.active,
@@ -7408,12 +7408,22 @@ fieldset[disabled] .btn-white.active {
 .tabbable.tabs-right .nav-tabs > li:hover > a,
 .tabbable.tabs-right .nav-tabs > li:focus > a {
   border: 1px solid;
-  border-color: #e5e5e5 !important;
+  border-color: #323131 !important;
   border-left: 0;
 	color: #fff;
     cursor: pointer;
-    background-color: #e67273;
+    background-color: #323131;
 }
+@media(max-width:767px){
+.tabbable.tabs-right .nav-tabs > li.active > a,
+.tabbable.tabs-right .nav-tabs > li:hover > a,
+.tabbable.tabs-right .nav-tabs > li:focus > a {
+    background-color: #e67273;
+	 border-color: #e67273 !important;
+}
+}
+
+
 .tabbable.tabs-right .nav-tabs > li > a {
   border-left: 0;
   min-width: 74px;
@@ -7432,7 +7442,7 @@ fieldset[disabled] .btn-white.active {
 .tabbable.tabs-right .tab-content {
   overflow: auto;
     border: 1px solid;
-    border-color: #e67273 !important;
+    border-color: #bdb9b9  !important;
 	overflow-x: hidden
 }
 .tabbable.tabs-below .nav-tabs {
@@ -9464,4 +9474,6 @@ position: absolute;
     background-color: #000 !important;
     outline: 0;
 }
-
+.text-light-orange{
+	color:#f5b6b6 !important
+}

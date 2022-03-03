@@ -29,7 +29,7 @@
 <div>
    
   
-    <!--BEGIN TOPBAR-->
+   <!--BEGIN TOPBAR-->
     <div id="header-topbar-option-demo" class="page-header-topbar">
         <nav id="topbar" role="navigation" style="margin-bottom: 0; z-index: 2;"
              class="navbar navbar-default navbar-static-top">
@@ -68,8 +68,8 @@
         <!--END MODAL CONFIG PORTLET--></div>
     <!--END TOPBAR-->
     <div id="wrapper"><!--BEGIN SIDEBAR MENU-->
-        <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
-            <div class="sidebar-collapse menu-scroll">
+       <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+            <div class="collapse sidebar-collapse menu-scroll">
                 <ul id="side-menu" class="nav">
                     <li class="user-panel">
                         <div class="thumb"><img src="images/profile.jpg"
@@ -131,62 +131,79 @@
 			<!--BEGIN CONTENT-->
             <div class="page-content">
 				
-				<div class="row mbm">
-				<div class="col-lg-0 col-xs-4 hidden-lg hidden-md">
-				
-                                                 <div class="input-group-btn">
-                                                <button type="button" tabindex="-1" class="btn btn-dark btn-lg" style="box-shadow: 0px 3px #9b2929;">Client</button>
-                                                <button type="button" data-toggle="dropdown" tabindex="-1"
-                                                        class="btn btn-dark-1 dropdown-toggle" style="padding:5px 6px;box-shadow: 0px 3px #9b2929;"><i
-                                                        class="fa fa-angle-down" style="font-size: 25px"></i></button>
-                                                <ul role="menu" class="dropdown-menu ">
-                                                    <li><a href="#" class="text-14">Dashboard</a></li>
-                                                    <li><a href="#">Schedule</a></li>
-                                                    <li><a href="#">Search Availability</a></li>                                                    
-                                                    <li><a href="#">Service Task</a></li>
-													  <li><a href="#">Address & Phone</a></li>
-													  <li><a href="#">Medication</a></li>
-													  <li><a href="#">Billing</a></li>
-													  <li><a href="#">Emergency Info</a></li>
-													  <li><a href="#">Compliance</a></li>
-													  <li><a href="#">Employees History</a></li>
-													  <li><a href="#">General</a></li>
-													  <li><a href="#">Declined Employees</a></li>
-													<li><a href="#">Provision</a></li>
-													  <li><a href="#">Group Information</a></li>
-													  <li><a href="#">Diagnosis</a></li>
-													  <li><a href="#">Contact Log</a></li>
-													 <li><a href="#">Notes</a></li>
-													  <li><a href="#">Other</a></li>
-                                                </ul>
-                                            </div>
-                                          
-					</div>
+				<div class="row mbm">				
 						<div class="col-lg-12 col-xs-8">
-					 <button type="button" class="btn btn-md btn-primary mrm mbm">Search Availability</button>
-									 <button type="button" class="btn btn-md btn-primary mbm">Schedule</button> 
+					 <button type="button" class="btn btn-md btn-dark mrm mbm">Search Availability</button>
+									 <button type="button" class="btn btn-md btn-dark mbm">Schedule</button> 
 					</div>
 				</div>
+				
+				
 				<div class="row">
-				<div class="col-lg-10 col-xs-12">
-					 <div class="row">
+					<div class="col-lg-12">
+					<div class="tabbable tabs-right">
+                                    <ul id="dashboard" class="nav nav-tabs">
+										<li class="dropdown hidden-lg hidden-md" style="max-width:158px">
+											<a id="myTabDrop3" href="#" data-toggle="dropdown" class="dropdown-toggle text-14">Employee
+                                            &nbsp;<b class="fa fa-angle-down pull-right"></b></a>
+                                            <ul role="menu" aria-labelledby="myTabDrop3" class="dropdown-menu pull-right">
+                                                <li><a href="#Dashboard" data-toggle="tab">Dashboard</a></li>
+                                                <li><a href="#Schedule"  data-toggle="tab">Schedule</a></li>
+												 <li class=" hidden-sm hidden-xs"><a href="#Personal-info" data-toggle="tab">Personal info</a></li>
+					                 	<li><a href="#Status" data-toggle="tab">Status</a></li>
+										<li><a href="#Address" data-toggle="tab">Address</a></li>
+										<li><a href="#Availability" data-toggle="tab">Availability</a></li>
+										<li><a href="#Absence" data-toggle="tab">Absence</a></li>
+										<li><a href="#Rates" data-toggle="tab">Rates</a></li>
+										<li><a href="#Declined-Cases" data-toggle="tab">Declined Cases</a></li>
+										<li><a href="#Incidents" data-toggle="tab">Incidents</a></li>
+										<li><a href="#Compliance" data-toggle="tab">Compliance</a></li>
+										<li><a href="#Hiring" data-toggle="tab">Hiring</a></li>
+                                       <li><a href="#Contact-Log-Notes" data-toggle="tab">Contact Log & Notes</a></li>
+										<li><a href="#Documents-Files" data-toggle="tab">Documents & Files</a></li>
+										<li><a href="#Mobile-App" data-toggle="tab">Mobile App</a></li>
+												
+												
+												
+												
+                                            </ul>
+                                        </li>
+                                        <li class="active hidden-sm hidden-xs"><a href="#Dashboard" data-toggle="tab">Dashboard</a></li>
+                                        <li class=" hidden-sm hidden-xs"><a href="#Schedule" data-toggle="tab">Schedule</a></li>
+										 <li class=" hidden-sm hidden-xs"><a href="#Personal-info" data-toggle="tab">Personal info</a></li>
+					                 	<li class=" hidden-sm hidden-xs"><a href="#Status" data-toggle="tab">Status</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Address" data-toggle="tab">Address</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Availability" data-toggle="tab">Availability</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Absence" data-toggle="tab">Absence</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Rates" data-toggle="tab">Rates</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Declined-Cases" data-toggle="tab">Declined Cases</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Incidents" data-toggle="tab">Incidents</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Compliance" data-toggle="tab">Compliance</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Hiring" data-toggle="tab">Hiring</a></li>
+                                       <li class=" hidden-sm hidden-xs"><a href="#Contact-Log-Notes" data-toggle="tab">Contact Log & Notes</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Documents-Files" data-toggle="tab">Documents & Files</a></li>
+										<li class=" hidden-sm hidden-xs"><a href="#Mobile-App" data-toggle="tab">Mobile App</a></li>
+                                    </ul>
+                                    <div id="myTabContent3" class="tab-content" style="min-height: 650px">
+                                        <div id="Dashboard" class="tab-pane fade active in">
+										 <div class="row">
                         <div class="col-md-5">
-                            <div class="panel">
-                                <div class="panel-body pan">
+                            <div class="panel panel-orange">
+                                <div class="panel-body pan bg-grey text-white">
                                     <div class="profile">
                                         <div class="user-info">
                                             <div style="margin-bottom: 15px" class="row">
                                                 <div class="col-xs-7 col-sm-7">
-													<h3 class="mtn text-orange">Personal Data</h3>
+													<h3 class="mtn text-light-orange">Personal Data</h3>
 													<h4>John Doe</h4>
 
-                                                    <p><strong><span class="text-orange">Client ID:</span></strong><br> 
+                                                    <p><strong><span class="text-light-orange">Client ID:</span></strong><br> 
                                                     <strong>12457</strong></p>
 
-                                                    <p><strong><span class="text-orange"><i class="fa fa-calendar"></i> Date Of Birth:</span> </strong><br> 
+                                                    <p><strong><span class="text-light-orange"><i class="fa fa-calendar"></i> Date Of Birth:</span> </strong><br> 
                                                     <strong>11 March 2000</strong></p>
 
-                                                    <p><strong class="mrs"><span class="text-orange"><i class="fa fa-phone"></i> Cell Phone:</span> </strong><br> 
+                                                    <p><strong class="mrs"><span class="text-light-orange"><i class="fa fa-phone"></i> Cell Phone:</span> </strong><br> 
                                                     <strong>+91 9999999999</strong></p>
 												
 													
@@ -212,13 +229,13 @@
                             </div>
                         </div>
 				   <div class="col-md-7">
-                            <div class="portlet box">
-                                <div class="portlet-header prolet-primary">
-                                    <div class="caption text-uppercase text-orange"><i style="font-size: 17px; margin-top: 2px;"
-                                                                           class="fa fa-location-arrow"></i>Location
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
+					   <div class="panel panel-orange">
+                                <div class="panel-header panel-primary">
+                                   <h4 class="mtm mbn plm text-uppercase  text-orange"> <i style="font-size: 17px; margin-top: 2px;"
+                                                                           class="fa fa-location-arrow text-grey"></i><strong> Location</strong>
+                                    </h4>
+                                </div>					   
+                                <div class="panel-body">
 									<div class="row">
 									<div class="col-sm-12"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55565170.29301636!2d-132.08532758867793!3d31.786060306224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1644488535402!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 										<div class="col-sm-12 text-14 text-orange"><strong>60 chiga abc, USA </strong></div>
@@ -234,13 +251,14 @@
 					  <div class="col-md-5">
 					  <div class="row">
 						   <div class="col-md-12">
-						      <div class="portlet box">
-                                <div class="portlet-header prolet-primary">
-                                    <div class="caption text-uppercase  text-orange"><i style="font-size: 17px; margin-top: 2px;"
-                                                                           class="fa fa-list-alt"></i>Billing Summary/Activate Authorization
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
+							    <div class="panel panel-orange">
+                                <div class="panel-header panel-primary">
+                                   <h4 class="mtm mbn plm text-uppercase  text-orange"> <i style="font-size: 17px; margin-top: 2px;"
+                                                                           class="fa fa-list-alt text-grey"></i><strong> Billing Summary/Activate Authorization</strong>
+                                    </h4>
+                                </div>					
+							
+                                <div class="panel-body">
 									<div class="row">
                                  <div class="col-sm-6"><p>Vaccn: Hourly&nbsp;&nbsp;Expires:11-02-2022</p></div>
 									<div class="col-sm-6 text-right small-txt">Authorized signature</div>
@@ -264,13 +282,14 @@
 						  </div>
 						    <div class="row">
 						   <div class="col-md-12">
-						      <div class="portlet box">
-                                <div class="portlet-header prolet-primary">
-                                    <div class="caption text-uppercase  text-orange"><i style="font-size: 17px; margin-top: 2px;"
-                                                                           class="fa fa-list-alt"></i>Most recent complication completed
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
+							   <div class="panel panel-orange">
+                                <div class="panel-header panel-primary">
+                                   <h4 class="mtm mbn plm text-uppercase  text-orange"> <i style="font-size: 17px; margin-top: 2px;"
+                                                                           class="fa fa-list-alt text-grey"></i><strong> Most recent complication completed</strong>
+                                    </h4>
+                                </div>					
+							   
+                                <div class="panel-body">
 									<div class="row">
                                
 									<div class="col-sm-12 text-right small-txt">Authorized signature</div>
@@ -283,13 +302,14 @@
 						  </div>
 						    <div class="row">
 						   <div class="col-md-12">
-						      <div class="portlet box">
-                                <div class="portlet-header prolet-primary">
-                                    <div class="caption text-uppercase  text-orange"><i style="font-size: 17px; margin-top: 2px;"
-                                                                           class="fa fa-list-alt"></i>Barnaldo Signature on file
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
+							   <div class="panel panel-orange">
+                                <div class="panel-header panel-primary">
+                                   <h4 class="mtm mbn plm text-uppercase  text-orange"> <i style="font-size: 17px; margin-top: 2px;"
+                                                                           class="fa fa-list-alt text-grey"></i><strong> Barnaldo Signature on file</strong>
+                                    </h4>
+                                </div>		
+							   
+                                <div class="panel-body">
 									<div class="row">
                                <div class="col-sm-12 text-right small-txt">Authorized signature</div>
 										</div>
@@ -301,13 +321,15 @@
 						  </div>
 					  </div>
 					    <div class="col-md-7">
-                            <div class="portlet box">
-                                <div class="portlet-header prolet-primary">
-                                    <div class="caption text-uppercase  text-orange"><i style="font-size: 17px; margin-top: 2px;"
-                                                                           class="fa fa-list-alt"></i>Schedule
-                                    </div>
-                                </div>
-                                <div class="portlet-body">
+							 <div class="panel panel-orange">
+                                <div class="panel-header panel-primary">
+                                   <h4 class="mtm mbn plm text-uppercase  text-orange"> <i style="font-size: 17px; margin-top: 2px;"
+                                                                           class="fa fa-list-alt text-grey"></i><strong> Schedule</strong>
+                                    </h4>
+                                </div>	
+							
+							
+                                <div class="panel-body">
                                     <ul class="todo-list sortable">
                                         <li class="clearfix"><span class="drag-drop"><i></i></span>
                                             
@@ -394,31 +416,1456 @@
                             </div>
                         </div>
 				  </div>
+										</div>
+                                        <div id="Schedule" class="tab-pane fade"><p>dddd</p>
+                                        </div>
+										
+										<div id="Personal-info" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>PERSONAL INFO</strong> </h4>
+												</div>
+												</div>
+											<div class="row">
+											<div class="col-lg-6">
+												   <div class="panel">
+                               				                                   <div class="panel-body ptn pbn">
+									<div class="row">
+									<div class="col-sm-12"> </div>
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Active
+                                        </td>
+                                        <td>
+                                           <input type="checkbox" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            SSN</td>
+                                        <td>
+                                            291-15-9616
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            First, Middle
+                                        </td>
+                                        <td>
+                                            John
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Last Name</td>
+                                        <td>
+                                            Afful
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Gender</td>
+                                        <td >
+                                            Male
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            HR Supervisor</td>
+                                        <td>
+                                            Ruano, Diana
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            
+                                            DOB</td>
+                                        <td>
+                                            
+                                            6/6/1966
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            
+                                            Ethnicity
+                                                                                   
+                                        </td>
+                                        <td>                                          
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Cell Phone</td>
+                                        <td>
+                                            (614) 515-8990</td>
+                                    </tr>
+                                  
+                                    <tr>
+                                        <td>
+                                            Home Phone</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Email</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                
+                                </tbody></table>
+									</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											<div class="col-lg-6">
+												   <div class="panel">
+                               				                                   <div class="panel-body ptn pbn">
+									<div class="row">
+									<div class="col-sm-12"> </div>
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Employee ID	
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Type</td>
+                                        <td>
+                                          Applicant HHA
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Start Date
+                                        </td>
+                                        <td>
+                                            1/5/2022
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Adj. Start Date</td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Contact</td>
+                                        <td >
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Contact Phone	</td>
+                                        <td>
+                                          
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            
+                                            Marital Status	</td>
+                                        <td>
+                                            
+Married                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>                                            
+                                            Dependents                                                                                   
+                                        </td>
+                                        <td>    
+											1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tax State	</td>
+                                        <td>
+                                           NJ</td>
+                                    </tr>
+                                  
+                                    <tr>
+                                        <td>
+                                            Municipality</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Notes</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                
+                                </tbody></table>
+									</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											</div>
+											
+                                        </div>
+										<div id="Status" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Status</strong> </h4>
+											<h5><strong>Current status allows John Afful to work</strong></h5>
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Status</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Status Type	</th>
+                                        <th>Status</th>
+                                        <th>Eff.Date	</th>
+                                        <th>Return Date	</th>
+										<th>Work</th>
+                                        <th>OK to Resume</th>
+                                        <th>Would Rehire	</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Start</td>
+                                        <td>Start</td>
+                                        <td>1/5/2022	</td>
+                                       <td></td>
+                                        <td></td>
+                                        <td><input type="checkbox"/></td>
+										  <td><input type="checkbox"/></td>
+                                        <td></td>
+                                     
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+                                     	<div id="Address" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Address</strong> </h4>
+												</div>
+												</div>
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Address</a>
+										</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-6">
+												   <div class="panel">
+                               				                                   <div class="panel-body ptn pbn">
+									<div class="row">
+									<div class="col-sm-12"> </div>
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Address
+                                        </td>
+                                        <td>
+                                          173 Nebraska Av
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Apt/Floor	</td>
+                                        <td>
+                                           Apt 2
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           City
+                                        </td>
+                                        <td>
+                                            Hamilton
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            County</td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            State</td>
+                                        <td >
+                                            NJ
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Zip</td>
+                                        <td>
+                                           08619
+                                        </td>
+                                    </tr>
+                                 
+                                
+                                </tbody></table>
+									</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											<div class="col-lg-6">
+												   <div class="panel panel-orange">
+													   <div class="panel-heading"><i class="fa fa-map-marker"></i> 173 Nebraska Av Apt 2, Hamilton , NJ 08619 Google Maps	</div>
+                               				                                   <div class="panel-body ptn pbn">
+									<div class="row">
+									<div class="col-sm-12">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55565170.29301636!2d-132.08532758867793!3d31.786060306224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1644488535402!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+										</div>
+										
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											</div>
+											
+                                        </div>
+											<div id="Availability" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Availability</strong> </h4>
+												</div>
+												</div>
+											<div class="row">
+										
+											<div class="col-lg-12">
+												   <div class="panel">
+                               				                                   <div class="panel-body ptn pbn">
+									<div class="row">
+									<div class="col-sm-12"> </div>
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="30%">
+                                          Will work with children	
+                                        </td>
+                                        <td width="20%">
+                                           <input type="checkbox"/>
+                                        </td>
+											<td width="30%">
+                                           Will work nights	
+                                        </td>
+											<td width="20%">
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>   
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+											<tr>
+                                        <td>
+                                          Will work with children	
+                                        </td>
+                                        <td>
+                                           <input type="checkbox"/>
+                                        </td>
+											<td>
+                                           Will work nights	
+                                        </td>
+											<td>
+                                           <input type="checkbox"/>
+                                        </td>
+                                    </tr>  
+                                
+                                </tbody></table>
+									</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											</div>
+											
+                                        </div>
+										<div id="Absence" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Absence</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Absence</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Activity	</th>
+                                        <th>From Date	</th>
+                                        <th>To Date</th>
+                                        <th>Notes</th>
+										<th></th>                                        
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Suspended</td>
+                                        <td>3/2/2022</td>
+                                        <td>1/5/2022	</td>
+                                       <td></td>
+                                        <td></td>
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Rates" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Rates</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Rates</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Activity	</th>
+                                        <th>Effective Dates	</th>
+                                        <th>Regular Rate</th>
+                                        <th>Overtime Rate</th>
+										<th>Applies/Description</th>                                        
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"/></td>
+                                        <td>1/5/2022 - 1/5/2032</td>
+                                        <td>13.00 - 140.00 - 70.00</td>
+                                       <td>13.00 - 140.00 - 70.00</td>
+										<td></td>
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Declined-Cases" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Declined Cases</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Declined Cases</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Date/Time	</th>
+                                        <th>Client</th>
+                                        <th>Reason</th>
+                                        <th>Case Start Date</th>
+										<th>Days</th>   
+										<th>Hours</th>
+                                        <th>Notes</th>
+										<th>Actions</th>  
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>13.00 - 140.00 - 70.00</td>
+                                        <td>ssss</td>
+                                        <td>abc</td>
+                                       <td>13-03-2021</td>
+										<td>3</td>
+										   <td>13.00</td>
+                                       <td>abc</td>
+										<td>1</td>
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Incidents" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Incidents</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Incidents</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Date/Time	</th>
+                                        <th>Client</th>
+                                        <th>Description</th>
+                                        <th>Memo</th>
+										<th></th>   
+										
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>13-03-2021</td>
+                                        <td>ssss</td>
+                                        <td>abc</td>
+                                       <td>11</td>
+										<td></td>
+										
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Compliance" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Compliance Due | Compliance Completed</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Compliance</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Due Date</th>
+                                        <th>Category</th>
+                                        <th>Code</th>
+                                        <th>Notes</th>
+										
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1/5/2022</td>
+                                        <td>Hiring</td>
+                                        <td>HHA Certificate</td>
+                                       <td></td>
+                                    </tr>
+										<tr>
+                                        <td>1/5/2022</td>
+                                        <td>Hiring</td>
+                                        <td>HHA Certificate</td>
+                                       <td></td>
+                                    </tr>
+										<tr>
+                                        <td>1/5/2022</td>
+                                        <td>Hiring</td>
+                                        <td>HHA Certificate</td>
+                                       <td></td>
+                                    </tr>
+                                  
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Hiring" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Hiring</strong> </h4>
+												</div>
+												</div>
+											<div class="row">
+											<div class="col-lg-6">
+												   <div class="panel panel-orange">
+													   <div class="panel-heading">Certificate</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Certificate Type	
+                                        </td>
+                                        <td>
+                                      HHA
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Date</td>
+                                        <td>
+                                           11/13/2012
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Number
+                                        </td>
+                                        <td>
+                                            26NH13986600
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Issued By	</td>
+                                        <td>
+                                            Nj Board Of Nursing
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Expires</td>
+                                        <td >
+                                            11/30/2023
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          Validation Date	</td>
+                                        <td>
+                                            1/5/2022
+                                        </td>
+                                    </tr>                                
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												  <div class="panel panel-orange">
+													   <div class="panel-heading">Additional Certificate
+</div>
+                               				                                   <div class="panel-body pdn">									
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Certificate Type	
+                                        </td>
+                                        <td>
+                                      HHA
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Date</td>
+                                        <td>
+                                           11/13/2012
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Number
+                                        </td>
+                                        <td>
+                                            26NH13986600
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Issued By	</td>
+                                        <td>
+                                            Nj Board Of Nursing
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Expires</td>
+                                        <td >
+                                            11/30/2023
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          Validation Date	</td>
+                                        <td>
+                                            1/5/2022
+                                        </td>
+                                    </tr>                                
+                                
+                                </tbody></table>
+									</div>
+                                </div>
+								
+                            </div>
+												</div>
+											<div class="col-lg-6">
+												   <div class="panel">
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td>
+                                            Employee ID	
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Type</td>
+                                        <td>
+                                          Applicant HHA
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Start Date
+                                        </td>
+                                        <td>
+                                            1/5/2022
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Adj. Start Date</td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Contact</td>
+                                        <td >
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Contact Phone	</td>
+                                        <td>
+                                          
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            
+                                            Marital Status	</td>
+                                        <td>
+                                            
+Married                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>                                            
+                                            Dependents                                                                                   
+                                        </td>
+                                        <td>    
+											1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tax State	</td>
+                                        <td>
+                                           NJ</td>
+                                    </tr>
+                                  
+                                    <tr>
+                                        <td>
+                                            Municipality</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                           Notes</td>
+                                        <td>
+                                            </td>
+                                    </tr>
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												
+												</div>
+											</div>
+											
+                                        </div>
+										<div id="Contact-Log-Notes" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Contact Log & Notes</strong> </h4>											
+												</div>
+										</div>
+											<div class="row">
+											<div class="col-lg-12">
+											<div class="row mbm">
+									<div class="col-sm-12 text-14"> 
+										<a href="" class="btn btn-md btn-default"><i class="fa fa-plus-square text-orange"></i> Add Contact Log & Notes</a>
+										</div>
+										</div>
+																				   
+									<div class="row">
+									<div class="col-sm-12"> 
+										
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Date/Time	</th>
+                                        <th>Client</th>
+                                        <th>Type / Reason</th>
+                                        <th>Issue</th>
+										<th>Notes/Action Taken	</th>
+                                        <th>Posted By	</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>02/25/2022 10:32AM</td>
+                                        <td></td>
+                                        <td>SMS Sent	</td>
+                                       <td></td>
+										<td><i class="fa fa-envelope"></i></td>
+                                       <td>Kumar, Ashok	</td>
+                                    </tr>
+								
+                                  <tr>
+                                        <td>02/25/2022 10:32AM</td>
+                                        <td></td>
+                                        <td>SMS Sent	</td>
+                                       <td></td>
+										<td><i class="fa fa-envelope"></i></td>
+                                       <td>Kumar, Ashok	</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+									</div>
+										</div>
+										</div>
+                                
+                             
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Documents-Files" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Documents & Files</strong> </h4>
+												</div>
+												</div>
+											<div class="row">
+											<div class="col-lg-12">
+												
+												</div>
+											
+											</div>
+											
+                                        </div>
+										<div id="Mobile-App" class="tab-pane fade">
+											<div class="row">
+											<div class="col-lg-12">
+										 <h4 class="mtm mbm text-uppercase  text-orange"> <strong>Mobile App Settings
+</strong> </h4>
+												<h5><strong>Mobile app access: <span class="h3like"><a href="https://eshcl.carecenta.com/mobile" target="_blank">eshcl.carecenta.com/mobile</a></span>
+                        Employee SSN XXX-XX-9616 is user to log in.</strong>
+                        
+                        </h5>
+											  </div>
+												</div>
+											<div class="row">
+											<div class="col-lg-6">
+												   <div class="panel panel-orange">
+													   <div class="panel-heading">
+														   Map & Appointment Selection<i class="fa fa-info-circle pull-right pts"></i>
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												   <div class="panel panel-orange">
+													   <div class="panel-heading">
+														   App Sign-In/Sign-Out Permissions
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												 <div class="panel panel-orange">
+													   <div class="panel-heading">
+														   Sign-Out Requirements
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												</div>
+										<div class="col-lg-6">
+												   <div class="panel panel-orange">
+													   <div class="panel-heading pbn">
+														  <p class="mbn pbn" style="line-height: 8px">Appointment Details</p>										
+                                       <span class="small-txt">Allow display of the following sections:</span>
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												   <div class="panel panel-orange">
+													   <div class="panel-heading">
+														   Documents & Forms
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												 <div class="panel panel-orange">
+													   <div class="panel-heading">
+														   Schedule
+</div>
+                               				                                   <div class="panel-body pdn">
+									<div class="row">
+									<div class="col-sm-12"> 
+										<div class="table-responsive">
+										<table class="table table-bordered table-striped mbn">
+                                    <tbody>
+										<tr>
+                                        <td width="80%">
+                                            <p class="mbn">Mobile App Language</p>										
+                                       <span class="small-txt">preferred by employee	</span>
+                                        </td>
+                                        <td width="20%">
+                                      <p class="mbn">English  </p>
+											<p class="mbn"><i class="fa fa-info-circle text-14"></i>  </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Recent Schedule	</td>
+                                        <td>
+                                          <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Show Upcoming Schedule	
+                                        </td>
+                                        <td>
+                                            <input type="checkbox"/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p class="mbn">Compliance Expiration Warnings
+</p>										
+                                       <span class="small-txt">Display compliance items expiration warnings 30 days ahead
+</span></td>
+                                        <td>
+                                           <input type="checkbox"/>&nbsp;&nbsp;<i class="fa fa-info-circle text-14"></i>  
+                                        </td>
+                                    </tr>
+                                                     
+                                
+                                </tbody></table>
+									</div>
+										</div>
+										</div>
+                                
+                                </div>
+								
+                            </div>
+												</div>
+											</div>
+											
+                                        </div>
+                                    </div>
+                                </div>
+					</div>
 					
-					</div>
-					<div class="col-lg-2 col-xs-12 hidden-xs hidden-sm">
-					<div class="list-group">
-						<a href="#" class="list-group-item active">Dashboard</a>
-						<a href="#" class="list-group-item">Schedule</a>
-						<a href="#" class="list-group-item">Search Availability</a>
-						<a href="#" class="list-group-item">Service Task</a>
-						<a href="#" class="list-group-item">Address & Phone</a>
-						<a href="#" class="list-group-item">Medication</a>
-						<a href="#" class="list-group-item">Billing</a>
-						<a href="#" class="list-group-item">Emergency Info</a>
-						<a href="#" class="list-group-item">Compliance</a>
-						<a href="#" class="list-group-item">Employees History</a>
-						<a href="#" class="list-group-item">General</a>
-						<a href="#" class="list-group-item">Declined Employees</a>
-						<a href="#" class="list-group-item">Provision</a>
-						<a href="#" class="list-group-item">Group Information</a>
-						<a href="#" class="list-group-item">Diagnosis</a>
-					<a href="#" class="list-group-item">Contact Log</a>
-						<a href="#" class="list-group-item">Notes</a>
-						<a href="#" class="list-group-item">Other</a>
-					</div>
-				</div>
-				</div>
+              
+				
+                
+            </div>
+				
+				
+				
+			
 				
              
                 
