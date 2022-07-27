@@ -1,0 +1,136 @@
+https://eshcl.carecenta.com/help/users--access/how-to-add-a-new-location-in-c
+(ashokapex/Akumar01#)
+
+http://3.92.88.7/#/
+https://login.eshcs.com/#/admin/master/create
+
+D:\Rakesh\ecsApp
+D:\Rakesh\ecsCareApp
+node -v
+npm -v
+npm install -g @angular/cli
+ng new ecsApp
+ng new <name> [options]
+ng serve --open
+npm install --save ag-grid-community ag-grid-angular
+npm cache clear --force
+npm install --save @angular/material @angular/cdk
+ng add @angular/material
+npm i ag-grid-angular
+npm i @ag-grid-community/angular
+npm i ngx-pagination
+npm install --legacy-peer-deps
+npm i --force ng6-toastr-notifications
+npm i fullcalendar
+ng generate component Login
+ng g m material(generate material module)
+npm i bootstrap@3.4.1
+npm i jquery@3.0.0
+npm i fontawesome-4.7
+ng generate module AppBootstrap  
+ng g m AppBootstrap
+"noImplicitReturns": false,
+"noImplicitAny": false,
+"strictPropertyInitialization": false,
+
+Open up Windows Powershell as Administrator
+Run the following command: set-executionpolicy remotesigned
+You should be able to now run commands in the Visual Studio Code terminal for Angular and Node.js.
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+
+https://www.truecodex.com/course/angular-project-training/bootstrap-integration-angular
+
+https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/#4-bootstrap-javascript-components-with-ngx-bootstrap-option-1
+
+
+
+[12/22/2021, 10:00 PM] Ashok Kumar: https://eshcl.carecenta.com/home.aspx
+[12/22/2021, 10:01 PM] Ashok Kumar: ashokapex userid and pwd : Akumar01#
+
+[12/22/2021, 10:00 PM] Ashok Kumar: 
+[12/22/2021, 10:01 PM] Ashok Kumar:  userid and pwd : 
+
+
+git remote add origin https://github.com/rakeshup94/ECSHomecareApp.git
+git branch -M main
+git push -u origin main
+
+https://login.eshcs.com/
+http://3.89.183.180/
+
+ashokkumarupbly81@gmail.com/ashok@123
+
+@shokbly81
+
+
+[7:20 AM, 2/23/2022]L&T Tax Advantage Fund GrowthAshok Kumar Usa: ashokkumar79892@gmail.com  : Anjiansh01#
+[7:20 AM, 2/23/2022]Ashok Kumar Usa: https://dashboard.stripe.com/login   Lawenrance location
+[7:22 AM, 2/23/2022]Ashok Kumar Usa: I will send plainfield NJ and Elizabeth location
+
+
+
+
+
+
+
+
+D:\Rakesh\ecsApp
+D:\Rakesh\ecsCareApp
+node -v
+npm -v
+npm install -g @angular/cli
+ng new ecsApp
+ng new <name> [options]
+ng serve --open
+npm install --save ag-grid-community ag-grid-angular
+npm cache clear --force
+npm install --save @angular/material @angular/cdk
+ng add @angular/material
+npm i ag-grid-angular
+npm i @ag-grid-community/angular
+npm i ngx-pagination
+npm install --legacy-peer-deps
+npm i --force ng6-toastr-notifications
+npm i fullcalendar
+ng generate component Login
+ng g m material(generate material module)
+npm i bootstrap@3.4.1
+npm i jquery@3.0.0
+npm i fontawesome-4.7
+"noImplicitReturns": false,
+"noImplicitAny": false,
+"strictPropertyInitialization": false,
+
+Open up Windows Powershell as Administrator
+Run the following command: set-executionpolicy remotesigned
+You should be able to now run commands in the Visual Studio Code terminal for Angular and Node.js.
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+
+ng g class models todo
+
+ng g c material
+
+
+ng g class models  --skip-tests=true services/meeting
+
+
+
+ng g s
+
+
+
+ng g class --skip-tests=true Model/Employee/complianceObj
+ng g c material
+ng g service --skip-tests=true services/Location
+
+
+
+Anjiansh01#
+
+npm i bootstrap@3.4.1
+npm i jquery@3.0.0
+npm i fontawesome-4.7
+
+ng g c --skip-tests=true company/findOffice
